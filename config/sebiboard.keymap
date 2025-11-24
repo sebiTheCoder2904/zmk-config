@@ -4,7 +4,7 @@
 
         default_layer {
             bindings = <
-                // Left half main keys
+                // Left half main keys (3x5)
                 &kp Q &kp W &kp E &kp R &kp T
                 &kp A &kp S &kp D &kp F &kp G
                 &kp Z &kp X &kp C &kp V &kp B
@@ -12,7 +12,7 @@
                 // Left thumb keys
                 &kp LCTRL &kp LALT &kp LGUI
 
-                // Right half main keys
+                // Right half main keys (3x5)
                 &kp Y &kp U &kp I &kp O &kp P
                 &kp H &kp J &kp K &kp L &kp SEMI
                 &kp N &kp M &kp COMMA &kp DOT &kp SLASH
