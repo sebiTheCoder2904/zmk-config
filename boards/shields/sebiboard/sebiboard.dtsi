@@ -13,9 +13,6 @@
         zmk,physical-layout = &physical_layout0;
     };
 
-    zephyr_udc0: &usbd {
-    status = "okay";
-    };
 
     kscan0: kscan {
         // If the hardware does not use a switch matrix, change this to the
