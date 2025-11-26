@@ -1,0 +1,7 @@
+compatible: "zmk,studio-keymap"
+
+include: base.yaml
+
+properties:
+  bindings:
+    type: array
