@@ -17,5 +17,37 @@
                       &kp LGUI  &kp LEFT_CONTROL  &kp SPACE    &kp RET  &kp LEFT_SHIFT  &kp ESC
       >;
     };
+
+    extra1 {
+        status = "reserved";
+    };
+
+    extra2 {
+        status = "reserved";
+    };
+
+    extra4 {
+        status = "reserved";
+    };
+
+    extra5 {
+        status = "reserved";
+    };
+
+    extra6 {
+        status = "reserved";
+    };
+
+    extra7 {
+        status = "reserved";
+    };
+
+    extra8 {
+        status = "reserved";
+    };
+
+    extra9 {
+        status = "reserved";
+    };
   };
 };
