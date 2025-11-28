@@ -13,7 +13,9 @@
             compatible = "zmk,studio-keymap";
     };
 
-    base {
+    default_layer { // Layer 0
+      
+      display-name = "Base";
       bindings = <
         &kp Q  &kp W  &kp E     &kp R             &kp T        &kp Z    &kp U           &kp I      &kp O    &kp P
         &kp A  &kp S  &kp D     &kp F             &kp G        &kp H    &kp J           &kp K      &kp L    &kt LESS_THAN
@@ -22,36 +24,36 @@
       >;
     };
 
-    extra1 {
-        status = "reserved";
-    };
-
-    extra2 {
-        status = "reserved";
-    };
-
-    extra4 {
-        status = "reserved";
-    };
-
-    extra5 {
-        status = "reserved";
-    };
-
-    extra6 {
-        status = "reserved";
-    };
-
-    extra7 {
-        status = "reserved";
-    };
-
-    extra8 {
-        status = "reserved";
-    };
-
-    extra9 {
-        status = "reserved";
-    };
+    //extra1 {
+    //    status = "reserved";
+    //};
+//
+    //extra2 {
+    //    status = "reserved";
+    //};
+//
+    //extra4 {
+    //    status = "reserved";
+    //};
+//
+    //extra5 {
+    //    status = "reserved";
+    //};
+//
+    //extra6 {
+    //    status = "reserved";
+    //};
+//
+    //extra7 {
+    //    status = "reserved";
+    //};
+//
+    //extra8 {
+    //    status = "reserved";
+    //};
+//
+    //extra9 {
+    //    status = "reserved";
+    //};
   };
 };
