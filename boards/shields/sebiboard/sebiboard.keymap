@@ -9,9 +9,6 @@
   keymap {
     compatible = "zmk,keymap";
 
-    studio {
-            compatible = "zmk,studio-keymap";
-    };
 
     default_layer { // Layer 0
       
