@@ -15,7 +15,7 @@
       display-name = "Base";
       bindings = <
         &kp Q  &kp W  &kp E     &kp R             &kp T        &kp Z    &kp U           &kp I      &kp O    &kp P
-        &kp A  &kp S  &kp D     &kp F             &kp G        &kp H    &kp J           &kp K      &kp L    &kt LESS_THAN
+        &kp A  &kp S  &kp D     &kp F             &kp G        &kp H    &kp J           &kp K      &kp L    &kp LESS_THAN
         &kp Y  &kp X  &kp C     &kp V             &kp B        &kp N    &kp M           &kp COMMA  &kp DOT  &kp MINUS
                       &studio_unlock  &kp SPACE   &bootloader	   &kp RET  &kp LEFT_SHIFT  &kp ESC
       >;
