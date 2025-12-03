@@ -14,7 +14,6 @@
     sys {
       bindings = <&to 3>;
       key-positions = <31 11>;
-      layers = <0>;
     };
   };
 
