@@ -8,14 +8,7 @@
 // dt-formatter: multilineListCommaStyle = "leading"
 
 / {
-  combos {
-    compatible = "zmk,combos";
-
-    sys {
-      bindings = <&to 3>;
-      key-positions = <31 11>;
-    };
-  };
+  combos { compatible = "zmk,combos"; };
 
   keymap {
     compatible = "zmk,keymap";
@@ -43,7 +36,7 @@
     special {
       bindings = <
         &kp ESC  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-        &kp TAB  &kp LC(S)  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+        &kp TAB  &to 3      &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
         &trans   &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans
                             &trans     &trans     &trans  &trans  &trans  &trans
       >;
