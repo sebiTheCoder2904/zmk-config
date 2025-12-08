@@ -8,7 +8,21 @@
 // dt-formatter: multilineListCommaStyle = "leading"
 
 / {
-  combos { compatible = "zmk,combos"; };
+  combos {
+    compatible = "zmk,combos";
+
+    punktcomma {
+      bindings = <&kp SEMI>;
+      key-positions = <35 27>;
+      layers = <0>;
+    };
+
+    doppelpunkt {
+      bindings = <&kp COLON>;
+      key-positions = <35 28>;
+      layers = <0>;
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
