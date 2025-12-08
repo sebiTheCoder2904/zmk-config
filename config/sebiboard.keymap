@@ -26,10 +26,10 @@
     nummber_layer {
       display-name = "num";
       bindings = <
-        &none  &none  &none  &none  &none  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
-        &none  &none  &none  &none  &none  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
-        &none  &none  &none  &none  &none  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp ENTER
-                      &none  &none  &none  &none        &none         &none
+        &kp EXCL    &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
+        &kp DOLLAR  &kp PERCENT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH           &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
+        &kp PIPE    &kp LT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GT             &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL
+                                  &none                 &none                  &none              &none        &none         &none
       >;
     };
 
