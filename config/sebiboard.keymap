@@ -8,7 +8,21 @@
 // dt-formatter: multilineListCommaStyle = "leading"
 
 / {
-  combos { compatible = "zmk,combos"; };
+  combos {
+    compatible = "zmk,combos";
+
+    steamMenu {
+      bindings = <&kp RS(TAB)>;
+      key-positions = <30 0>;
+      layers = <2>;
+    };
+
+    quickMenu {
+      bindings = <&kp RS(RC(TAB))>;
+      key-positions = <10 30>;
+      layers = <2>;
+    };
+  };
 
   behaviors {
     semicolonMod: semicolonMod {
