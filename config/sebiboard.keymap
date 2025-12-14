@@ -64,8 +64,8 @@
 
     wasd-s {
       bindings = <
-        &kp LC(TAB)      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp LC(LA(TAB))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp LS(TAB)      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp LS(LC(TAB))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans  &trans  &trans  &trans  &trans  &trans
       >;
