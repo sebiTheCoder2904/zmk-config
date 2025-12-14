@@ -39,7 +39,7 @@
         &kp Q  &kp W  &kp E     &kp R  &kp T  &kp Z             &kp U      &kp I           &kp O      &kp P
         &kp A  &kp S  &kp D     &kp F  &kp G  &kp H             &kp J      &kp K           &kp L      &kp BACKSPACE
         &kp Y  &kp X  &kp C     &kp V  &kp B  &kp N             &kp M      &semicolonMod   &colonMod  &kp ENTER
-                      &kp LGUI  &mo 5  &mo 4  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_SHIFT
+                      &kp LGUI  &mo 6  &mo 4  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_SHIFT
       >;
     };
 
@@ -49,7 +49,7 @@
         &kp Q  &kp W  &kp E         &kp R  &kp T  &kp Z             &kp U      &kp I           &kp O      &kp P
         &kp A  &kp S  &kp D         &kp F  &kp G  &kp H             &kp J      &kp K           &kp L      &kp BACKSPACE
         &kp Y  &kp X  &kp C         &kp V  &kp B  &kp N             &kp M      &semicolonMod   &colonMod  &kp ENTER
-                      &kp LEFT_ALT  &mo 5  &mo 4  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_SHIFT
+                      &kp LEFT_ALT  &mo 6  &mo 4  &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_SHIFT
       >;
     };
 
@@ -74,17 +74,26 @@
     nummber_layer {
       display-name = "num";
       bindings = <
-        &kp EXCL  &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
-        &kp AT    &kp PERCENT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH           &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
-        &kp PIPE  &kp LT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GT             &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL
-                                &none                 &none                  &none              &none        &none         &none
+        &kp EXCL    &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
+        &kp DOLLAR  &kp PERCENT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH           &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
+        &kp PIPE    &kp LT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GT             &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL
+                                  &none                 &none                  &none              &none        &none         &mo 5
+      >;
+    };
+
+    nummberlayerSHIFT {
+      bindings = <
+        &kp TILDE  &trans    &trans         &kp GRAVE  &kp SINGLE_QUOTE  &trans  &trans  &trans  &trans  &trans
+        &kp AT     &kp AMPS  &kp BACKSLASH  &kp SLASH  &kp PRINTSCREEN   &trans  &trans  &trans  &trans  &trans
+        &kp UNDER  &trans    &trans         &trans     &trans            &trans  &trans  &trans  &trans  &trans
+                             &trans         &trans     &trans            &trans  &trans  &trans
       >;
     };
 
     special {
       bindings = <
         &kp ESC  &trans     &trans     &trans     &trans  &trans          &trans          &trans        &trans           &trans
-        &kp TAB  &to 6      &trans     &trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+        &kp TAB  &to 7      &trans     &trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
         &trans   &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans          &trans          &trans        &trans           &trans
                             &trans     &trans     &trans  &trans          &trans          &trans
       >;
@@ -94,7 +103,7 @@
       bindings = <
         &to 0  &to 1  &to 2           &none       &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
         &none  &none  &none           &none       &none        &none         &none         &none         &none         &none
-        &none  &none  &studio_unlock  &sys_reset  &bootloader  &bootloader   &sys_reset    &none         &out OUT_BLE  &out OUT_USB
+        &none  &none  &studio_unlock  &sys_reset  &bootloader  &bootloader   &sys_reset    &bt BT_CLR    &out OUT_BLE  &out OUT_USB
                       &none           &none       &none        &none         &none         &none
       >;
     };
