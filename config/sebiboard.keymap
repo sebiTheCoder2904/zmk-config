@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HOST_OS 1
+
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
@@ -87,10 +88,10 @@
 
     nummberlayerSHIFT {
       bindings = <
-        &kp TILDE  &trans    &trans         &kp GRAVE  &kp SINGLE_QUOTE  &trans  &de_ue  &de_ae  &de_oe  &de_eszett
-        &kp AT     &kp AMPS  &kp BACKSLASH  &kp SLASH  &kp PRINTSCREEN   &trans  &trans  &trans  &trans  &trans
-        &kp UNDER  &trans    &trans         &trans     &trans            &trans  &trans  &trans  &trans  &trans
-                             &trans         &trans     &trans            &trans  &trans  &trans
+        &kp TILDE  &trans    &trans         &kp GRAVE  &kp SINGLE_QUOTE  &kp RA(N5)  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp RA(S)
+        &kp AT     &kp AMPS  &kp BACKSLASH  &kp SLASH  &kp PRINTSCREEN   &trans      &trans     &trans     &trans     &trans
+        &kp UNDER  &trans    &trans         &trans     &trans            &trans      &trans     &trans     &trans     &trans
+                             &trans         &trans     &trans            &trans      &trans     &trans
       >;
     };
 
