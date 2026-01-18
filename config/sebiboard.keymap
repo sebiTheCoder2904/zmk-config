@@ -35,6 +35,43 @@
     };
   };
 
+  macros {
+    ue: ue {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp DQT &kp U>;
+      label = "UE";
+    };
+
+    normalDQ: normalDQ {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp DQT &kp SPACE>;
+      label = "NORMALDQ";
+    };
+
+    ae: ae {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp DQT &kp A>;
+      label = "AE";
+    };
+
+    oe: oe {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp DQT &kp O>;
+      label = "OE";
+    };
+
+    normalSQ: normalSQ {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp SQT &kp SPACE>;
+      label = "NORMALSQ";
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -79,19 +116,19 @@
     nummber_layer {
       display-name = "num";
       bindings = <
-        &kp EXCL    &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
-        &kp DOLLAR  &kp PERCENT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH           &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
-        &kp PIPE    &kp LT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GT             &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL
-                                  &none                 &none                  &none              &none        &none         &mo 5
+        &kp EXCL    &kp QUESTION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &normalDQ  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5
+        &kp DOLLAR  &kp PERCENT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH   &kp N6       &kp N7        &kp N8           &kp N9         &kp N0
+        &kp PIPE    &kp LT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GT     &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp KP_EQUAL
+                                  &none                 &none                  &none      &none        &none         &mo 5
       >;
     };
 
     nummberlayerSHIFT {
       bindings = <
-        &kp TILDE  &trans    &trans         &kp GRAVE  &kp SINGLE_QUOTE  &kp RA(N5)  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp RA(S)
-        &kp AT     &kp AMPS  &kp BACKSLASH  &kp SLASH  &kp PRINTSCREEN   &trans      &trans     &trans     &trans     &trans
-        &kp UNDER  &trans    &trans         &trans     &trans            &trans      &trans     &trans     &trans     &trans
-                             &trans         &trans     &trans            &trans      &trans     &trans
+        &kp TILDE  &trans    &trans         &kp GRAVE  &normalSQ        &trans  &ue     &ae     &oe     &trans
+        &kp AT     &kp AMPS  &kp BACKSLASH  &kp SLASH  &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans
+        &kp UNDER  &trans    &trans         &trans     &trans           &trans  &trans  &trans  &trans  &trans
+                             &trans         &trans     &trans           &trans  &trans  &trans
       >;
     };
 
